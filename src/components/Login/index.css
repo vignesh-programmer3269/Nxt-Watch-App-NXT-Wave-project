@@ -1,0 +1,100 @@
+:root {
+  --bg-color: #ffffff;
+  --form-bg-color: #ffffff;
+  --login-form-box-shadow: 0 4px 16px 0 #bfbfbf;
+  --font-label-color: #7e858e;
+  --input-border: 1px solid #dbdde1;
+  --show-password-color: #181818;
+  --input-color: #1e293b;
+  --err-msg-color: #ff0b37;
+}
+
+[theme-data='dark'] {
+  --bg-color: #212121;
+  --form-bg-color: #0f0f0f;
+  --login-form-box-shadow: '';
+  --font-label-color: #f8fafc;
+  --input-border: 1px solid #475569;
+  --show-password-color: #f9f9f9;
+  --input-color: #f8fafc;
+  --err-msg-color: #ff0000;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--form-bg-color);
+  padding: 40px;
+  box-shadow: var(--login-form-box-shadow);
+  width: 350px;
+  border-radius: 6px;
+}
+
+.login-form > img {
+  width: 150px;
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.login-form > label {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--font-label-color);
+  margin: 5px 0;
+}
+
+.login-form > input {
+  border: var(--input-border);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  padding: 8px 12px;
+  outline: none;
+  background-color: var(--form-bg-color);
+  color: var(--input-color);
+}
+
+.login-form > div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.login-form > div > label {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: var(--show-password-color);
+  margin-left: 6px;
+}
+
+.login-form > button {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  background-color: #3b82f6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: #ffffff;
+  padding: 10px 0;
+  margin-top: 16px;
+}
+
+.login-form > p {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: var(--err-msg-color);
+}
