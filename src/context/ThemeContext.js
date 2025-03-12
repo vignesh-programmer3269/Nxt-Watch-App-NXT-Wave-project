@@ -3,9 +3,8 @@ import {createContext, Component} from 'react'
 export const ThemeContext = createContext()
 
 export class ThemeProvider extends Component {
-  // localStorage.getItem('theme') ||
   state = {
-    theme: 'dark',
+    theme: localStorage.getItem('theme') || 'light',
   }
 
   componentDidMount() {

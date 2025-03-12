@@ -1,0 +1,48 @@
+:root {
+  --logout-btn-color: #3b82f6;
+}
+
+[theme-data='dark'] {
+  --logout-btn-color: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 10vh;
+  background-color: var(--bg-color);
+  padding: 20px 40px;
+}
+
+.header-container > div:nth-of-type(1) > img {
+  width: 45%;
+  padding: 10px;
+}
+
+.header-container > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-container > div:nth-of-type(2) > img {
+  width: 15%;
+}
+
+.header-container > div:nth-of-type(2) > button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid var(--logout-btn-color) !important;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: var(--logout-btn-color);
+  padding: 5px 12px;
+}
