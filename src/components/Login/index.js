@@ -13,6 +13,15 @@ class Login extends Component {
     errMsg: '',
   }
 
+  componentDidMount() {
+    const jwtToken = Cookies.get('jwt_token')
+
+    if (jwtToken !== undefined) {
+      const {history} = this.props
+      history.replace('/')
+    }
+  }
+
   onChangeUsername = event => {
     this.setState({username: event.target.value})
   }

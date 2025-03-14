@@ -1,6 +1,8 @@
 import {Component} from 'react'
 
 import Header from '../Header'
+import SideBar from '../SideBar'
+
 import './index.css'
 
 class Home extends Component {
@@ -9,7 +11,12 @@ class Home extends Component {
   }
 
   render() {
-    return <Header />
+    return (
+      <>
+        <Header />
+        <SideBar />
+      </>
+    )
   }
 }
 
