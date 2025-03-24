@@ -33,11 +33,19 @@ const Header = props => {
           </div>
           <div>
             {value.theme === 'light' ? (
-              <button type="button" onClick={value.toggleTheme}>
+              <button
+                type="button"
+                data-testid="theme"
+                onClick={value.toggleTheme}
+              >
                 <FaMoon color="black" fontSize="24px" />
               </button>
             ) : (
-              <button type="button" onClick={value.toggleTheme}>
+              <button
+                type="button"
+                data-testid="theme"
+                onClick={value.toggleTheme}
+              >
                 <FiSun color="white" fontSize="24px" />
               </button>
             )}

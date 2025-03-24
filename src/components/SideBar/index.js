@@ -15,7 +15,9 @@ const SideBar = () => {
       <div>
         <Link
           to="/"
-          className={`navigater ${location.pathname === '/' ? 'active' : ''}`}
+          className={`link navigater ${
+            location.pathname === '/' ? 'active' : ''
+          }`}
         >
           <AiFillHome
             className={`nav-icon ${
@@ -26,7 +28,7 @@ const SideBar = () => {
         </Link>
         <Link
           to="/trending "
-          className={`navigater ${
+          className={`link navigater ${
             location.pathname === '/trending' ? 'active' : ''
           }`}
         >
@@ -39,7 +41,7 @@ const SideBar = () => {
         </Link>
         <Link
           to="/gaming "
-          className={`navigater ${
+          className={`link navigater ${
             location.pathname === '/gaming' ? 'active' : ''
           }`}
         >
@@ -52,7 +54,7 @@ const SideBar = () => {
         </Link>
         <Link
           to="/saved-videos"
-          className={`navigater ${
+          className={`link navigater ${
             location.pathname === '/saved-videos' ? 'active' : ''
           }`}
         >

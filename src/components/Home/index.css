@@ -1,0 +1,147 @@
+:root {
+  --home-bg-color: #f9f9f9;
+  --search-bg-color: #ffffff;
+  --search-border-color: #cccccc;
+  --search-font-color: #000000;
+  --search-btn-bg-color: #f4f4f4;
+  --failure-para-color: #475569;
+  --failure-head-color: #1e293b;
+}
+
+[theme-data='dark'] {
+  --home-bg-color: #181818;
+  --search-bg-color: #181818;
+  --search-border-color: #383838;
+  --search-font-color: #ffffff;
+  --search-btn-bg-color: #303030;
+  --failure-para-color: #7e858e;
+  --failure-head-color: #f8fafc;
+}
+
+.home-page-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home-page {
+  background-color: var(--home-bg-color);
+  margin-top: 10vh;
+  margin-left: 280px;
+  width: 100%;
+  min-height: 90vh;
+}
+
+.home-banner-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+  background-size: cover;
+  padding: 30px;
+}
+
+.home-banner-container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-banner-logo {
+  width: 150px;
+}
+
+.banner-close-btn {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.home-banner-container > p {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #1e293b;
+  margin: 20px 0;
+}
+
+.home-banner-container > button {
+  border: 1px solid #231f20;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 14px;
+  padding: 7px 12px;
+  background-color: transparent;
+}
+
+.search-field {
+  display: flex;
+  justify-content: flex-start;
+  margin: 30px;
+}
+
+.search-field > input {
+  outline: none;
+  background-color: var(--search-bg-color);
+  border: 1px solid var(--search-border-color);
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: var(--search-font-color);
+  width: 450px;
+}
+
+.search-field > button {
+  background-color: var(--search-btn-bg-color);
+  border: 1px solid var(--search-border-color);
+  font-size: 18px;
+  color: #606060;
+  padding: 5px 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.home-failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  text-align: center;
+}
+
+.home-failure-container > img {
+  width: 350px;
+}
+
+.home-failure-container > h1 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: var(--failure-head-color);
+  margin-top: 20px ;
+}
+
+.home-failure-container > p {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: var(--failure-para-color);
+  margin: 20px 0;
+}
+
+.home-failure-container > button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  background-color: #4f46e5;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  color: #f1f1f1;
+  padding: 12px 30px;
+}
+
+.videos-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}

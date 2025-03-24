@@ -16,8 +16,11 @@
 
 .sidebar-container {
   background-color: var(--bg-color);
+  position: fixed;
+  top: 10vh;
+  left: 0;
   height: 90vh;
-  width: 20vw;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,10 +33,9 @@
   font-family: 'Roboto';
   font-size: 16px;
   color: var(--nav-text-color);
-  text-decoration: none;
   display: flex;
   align-items: center;
-  min-width: 20vw;
+  min-width: 280px;
 }
 
 .nav-icon {
