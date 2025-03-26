@@ -17,8 +17,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .link {
   text-decoration: none;
+}
+
+.failure-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  text-align: center;
+}
+
+.failure-view-container > img {
+  width: 350px;
+}
+
+.failure-view-container > h1 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: var(--failure-head-color);
+  margin-top: 20px;
+}
+
+.failure-view-container > p {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: var(--failure-para-color);
+  margin: 20px 0;
+}
+
+.failure-view-container > button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  background-color: #4f46e5;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  color: #f1f1f1;
+  padding: 12px 30px;
 }

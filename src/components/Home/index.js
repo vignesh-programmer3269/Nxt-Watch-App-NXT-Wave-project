@@ -126,7 +126,7 @@ class Home extends Component {
   renderHomePageFailure = () => (
     <ThemeContext.Consumer>
       {value => (
-        <div className="home-failure-container">
+        <div className="failure-view-container">
           {value.theme === 'light' ? (
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png"

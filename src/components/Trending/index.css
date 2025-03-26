@@ -1,0 +1,64 @@
+:root {
+  --trending-bg-color: #f9f9f9;
+  --header-bg-color: #f1f1f1;
+  --icon-bg-color: #e2e8f0;
+  --header-font-color: #231f20;
+  /* --search-bg-color: #ffffff;
+  --search-border-color: #cccccc;
+  --search-font-color: #000000;
+  --search-btn-bg-color: #f4f4f4;
+  --failure-para-color: #475569;
+  --failure-head-color: #1e293b; */
+}
+
+[theme-data='dark'] {
+  --trending-bg-color: #0f0f0f;
+  --header-bg-color: #181818;
+  --icon-bg-color: #0f0f0f;
+  --header-font-color: #f8fafc;
+  /* --search-bg-color: #181818;
+  --search-border-color: #383838;
+  --search-font-color: #ffffff;
+  --search-btn-bg-color: #303030;
+  --failure-para-color: #7e858e;
+  --failure-head-color: #f8fafc; */
+}
+
+.trending-page-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.trending-page {
+  background-color: var(--trending-bg-color);
+  margin-top: 10vh;
+  margin-left: 280px;
+  width: 100%;
+  min-height: 90vh;
+}
+
+.trending-page-header {
+  background-color: var(--header-bg-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.trending-icon {
+  box-sizing: content-box;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 1000px;
+  font-size: 30px;
+  color: #ff0000;
+  background-color: var(--icon-bg-color);
+}
+
+.trending-page-header > h1 {
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--header-font-color);
+}
+
