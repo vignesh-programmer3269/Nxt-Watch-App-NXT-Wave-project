@@ -1,31 +1,31 @@
 :root {
-  --trending-bg-color: #f9f9f9;
+  --gaming-bg-color: #f9f9f9;
   --header-bg-color: #f1f1f1;
   --icon-bg-color: #e2e8f0;
   --header-font-color: #231f20;
 }
 
 [theme-data='dark'] {
-  --trending-bg-color: #0f0f0f;
+  --gaming-bg-color: #0f0f0f;
   --header-bg-color: #181818;
   --icon-bg-color: #0f0f0f;
   --header-font-color: #f8fafc;
 }
 
-.trending-page-container {
+.gaming-page-container {
   display: flex;
   justify-content: flex-start;
 }
 
-.trending-page {
-  background-color: var(--trending-bg-color);
+.gaming-page {
+  background-color: var(--gaming-bg-color);
   margin-top: 10vh;
   margin-left: 280px;
   width: 100%;
   min-height: 90vh;
 }
 
-.trending-page-header {
+.gaming-page-header {
   background-color: var(--header-bg-color);
   display: flex;
   justify-content: flex-start;
@@ -33,7 +33,7 @@
   padding: 10px 40px;
 }
 
-.trending-icon {
+.gaming-icon {
   box-sizing: content-box;
   margin: 20px;
   padding: 25px;
@@ -43,9 +43,17 @@
   background-color: var(--icon-bg-color);
 }
 
-.trending-page-header > h1 {
+.gaming-page-header > h1 {
   font-family: 'Roboto';
   font-size: 36px;
   font-weight: bold;
   color: var(--header-font-color);
+}
+
+.gaming-videos-container {
+  margin: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }

@@ -1,0 +1,36 @@
+:root {
+  --title-color: #231f20;
+}
+
+[theme-data='dark'] {
+  --title-color: #f8fafc;
+}
+
+.gaming-video {
+  width: 90%;
+  margin: 10px;
+}
+
+.gaming-video > img {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.gaming-video-detail {
+  margin: 10px 0;
+}
+
+.gaming-video-detail > p:nth-of-type(1) {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--title-color);
+  line-height: 24px;
+}
+
+.gaming-video-detail > p:nth-of-type(2) {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #64748b;
+  margin: 8px 0;
+}
