@@ -1,0 +1,72 @@
+:root {
+  --logout-btn-color: #3b82f6;
+  --notify-para-color: #1f4062;
+  --popup-bg-color: #ffffff;
+}
+
+[theme-data='dark'] {
+  --logout-btn-color: #ffffff;
+  --notify-para-color: #f9f9f9;
+  --popup-bg-color: #212121;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid var(--logout-btn-color) !important;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: 'Roboto';
+  color: var(--logout-btn-color);
+  padding: 5px 12px;
+}
+
+.logout-popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000050;
+}
+
+.popup-container {
+  background-color: var(--popup-bg-color);
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+.popup-container > p {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: var(--notify-para-color);
+}
+
+.popup-container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.cancel-btn,
+.confirm-btn {
+  outline: none;
+  cursor: pointer;
+  padding: 12px 18px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: #9ba1a9;
+  border: 1px solid #9ba1a9;
+}
+
+.confirm-btn {
+  background-color: #3b82f6;
+  border: 1px solid #3b82f6;
+  color: #ffffff;
+}

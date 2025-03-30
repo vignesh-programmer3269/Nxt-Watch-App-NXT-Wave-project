@@ -1,9 +1,7 @@
 :root {
-  --logout-btn-color: #3b82f6;
 }
 
 [theme-data='dark'] {
-  --logout-btn-color: #ffffff;
 }
 
 .header-container {
@@ -39,14 +37,4 @@
   border: 0;
   outline: none;
   cursor: pointer;
-}
-
-.logout-btn {
-  background-color: transparent;
-  border: 1px solid var(--logout-btn-color) !important;
-  border-radius: 3px;
-  font-size: 16px;
-  font-family: 'Roboto';
-  color: var(--logout-btn-color);
-  padding: 5px 12px;
 }
