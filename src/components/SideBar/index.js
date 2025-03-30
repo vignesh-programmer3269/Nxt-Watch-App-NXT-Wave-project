@@ -16,7 +16,7 @@ const SideBar = () => {
         <Link
           to="/"
           className={`link navigater ${
-            location.pathname === '/' ? 'active' : ''
+            location.pathname === '/' ? 'active-nav' : ''
           }`}
         >
           <AiFillHome
@@ -27,9 +27,9 @@ const SideBar = () => {
           Home
         </Link>
         <Link
-          to="/trending "
+          to="/trending"
           className={`link navigater ${
-            location.pathname === '/trending' ? 'active' : ''
+            location.pathname === '/trending' ? 'active-nav' : ''
           }`}
         >
           <HiFire
@@ -40,9 +40,9 @@ const SideBar = () => {
           Trending
         </Link>
         <Link
-          to="/gaming "
+          to="/gaming"
           className={`link navigater ${
-            location.pathname === '/gaming' ? 'active' : ''
+            location.pathname === '/gaming' ? 'active-nav' : ''
           }`}
         >
           <FaGamepad
@@ -55,7 +55,7 @@ const SideBar = () => {
         <Link
           to="/saved-videos"
           className={`link navigater ${
-            location.pathname === '/saved-videos' ? 'active' : ''
+            location.pathname === '/saved-videos' ? 'active-nav' : ''
           }`}
         >
           <MdPlaylistAdd

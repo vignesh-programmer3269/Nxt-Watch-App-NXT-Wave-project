@@ -1,0 +1,138 @@
+:root {
+  --gaming-bg-color: #f9f9f9;
+  --title-color: #383838;
+  --button-color: #424242;
+  --hr-line-color: #e5e6e6;
+  --channel-name-color: #231f20;
+  --subscriber-count-color: #7e858e;
+  --description-color: #67616c;
+}
+
+[theme-data='dark'] {
+  --gaming-bg-color: #0f0f0f;
+  --title-color: #f4f4f4;
+  --button-color: #909090;
+  --hr-line-color: #475569;
+  --channel-name-color: #f4f4f4;
+  --subscriber-count-color: #7e858e;
+  --description-color: #ebebeb;
+}
+
+.video-details-page-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.video-details-page {
+  background-color: var(--gaming-bg-color);
+  margin-top: 10vh;
+  margin-left: 280px;
+  padding: 20px;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  margin: 10px 0;
+}
+
+.video-details-page > p {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--title-color);
+  margin: 20px 0;
+}
+
+.video-details-page > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.video-details-page > div > p {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #64748b;
+  margin: 8px 0;
+}
+
+.like-save {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-save > button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color: var(--button-color);
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 0 10px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+.video-details-hr {
+  border: 1px solid var(--hr-line-color);
+  width: 100%;
+  margin: 20px 0;
+}
+
+.channel-details {
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+.channel-details > img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.channel-details > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.channel-details > div > p:nth-of-type(1) {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--channel-name-color);
+  margin: 5px;
+}
+
+.channel-details > div > p:nth-of-type(2) {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: var(--subscriber-count-color);
+  margin: 5px;
+}
+
+.video-details-page > p:nth-of-type(2) {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--description-color);
+  margin-left: 60px;
+}

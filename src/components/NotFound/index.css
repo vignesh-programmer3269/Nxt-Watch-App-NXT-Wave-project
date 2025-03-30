@@ -1,0 +1,45 @@
+:root {
+  --not-found-para-color: #475569;
+  --not-found-head-color: #1e293b;
+}
+
+[theme-data='dark'] {
+  --not-found-para-color: #7e858e;
+  --not-found-head-color: #f8fafc;
+}
+
+.not-found-page-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.not-found-container {
+  background-color: var(--home-bg-color);
+  margin-top: 10vh;
+  margin-left: 280px;
+  width: 100%;
+  min-height: 90vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-container > img {
+  width: 350px;
+}
+
+.not-found-container > h1 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: var(--not-found-head-color);
+  margin-top: 20px;
+}
+
+.not-found-container > p {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: var(--not-found-para-color);
+  margin: 20px 0;
+}

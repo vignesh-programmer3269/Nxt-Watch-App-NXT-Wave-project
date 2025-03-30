@@ -78,6 +78,8 @@ class Gaming extends Component {
   renderGamingPageSuccess = () => {
     const {videosList} = this.state
 
+    console.log(this.props)
+
     return (
       <>
         <div className="gaming-page-header">

@@ -1,3 +1,13 @@
+:root {
+  --failure-para-color: #475569;
+  --failure-head-color: #1e293b;
+}
+
+[theme-data='dark'] {
+  --failure-para-color: #7e858e;
+  --failure-head-color: #f8fafc;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -44,7 +44,7 @@
   margin: 0 25px;
 }
 
-.active {
+.active-nav {
   background-color: var(--active-bg-color);
   font-weight: bold;
 }
