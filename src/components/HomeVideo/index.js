@@ -23,6 +23,9 @@ const HomeVideo = props => {
             <p>
               {viewCount} views • {rest.join(' ')}
             </p>
+            <p>
+              {channel.name} • {viewCount} views • {rest.join(' ')}
+            </p>
           </div>
         </div>
       </div>

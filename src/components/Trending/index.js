@@ -105,12 +105,12 @@ class Trending extends Component {
           {value.theme === 'light' ? (
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png"
-              alt=""
+              alt="failure view"
             />
           ) : (
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png"
-              alt=""
+              alt="failure view"
             />
           )}
           <h1>Oops! Something Went Wrong</h1>
@@ -146,7 +146,7 @@ class Trending extends Component {
       <>
         <Header />
 
-        <div className="trending-page-container">
+        <div data-testid="trending" className="trending-page-container">
           <SideBar />
           <div className="trending-page">{this.renderTrendingPage()}</div>
         </div>

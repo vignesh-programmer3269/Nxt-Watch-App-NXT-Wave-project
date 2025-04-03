@@ -25,6 +25,12 @@
   min-height: 90vh;
 }
 
+@media (max-width: 567px) {
+  .gaming-page {
+    margin-left: 0;
+  }
+}
+
 .gaming-page-header {
   background-color: var(--header-bg-color);
   display: flex;
@@ -51,7 +57,7 @@
 }
 
 .gaming-videos-container {
-  margin: 40px;
+  margin: 16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

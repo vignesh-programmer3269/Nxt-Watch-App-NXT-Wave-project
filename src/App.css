@@ -35,12 +35,19 @@ body {
 }
 
 .failure-view-container {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center !important;
   align-items: center;
   margin: 30px;
   text-align: center;
+}
+
+@media (max-width: 567px) {
+  .failure-view-container {
+    margin: 0;
+    height: 100%;
+  }
 }
 
 .failure-view-container > img {

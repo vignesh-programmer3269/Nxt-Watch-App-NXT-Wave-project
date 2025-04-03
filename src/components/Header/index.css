@@ -4,7 +4,7 @@
 [theme-data='dark'] {
 }
 
-.header-container {
+.large-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,24 +17,68 @@
   left: 0;
 }
 
-.header-container > div:nth-of-type(1) > img {
+@media (max-width: 576px) {
+  .large-header-container {
+    display: none;
+  }
+}
+
+.small-header-container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 10vh;
+  width: 100%;
+  background-color: var(--bg-color);
+  padding: 21px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 576px) {
+  .small-header-container {
+    display: flex;
+  }
+}
+
+.large-header-container > div:nth-of-type(1) > img {
   width: 45%;
   padding: 10px;
 }
 
-.header-container > div:nth-of-type(2) {
+.small-header-container > div:nth-of-type(1) > img {
+  width: 55%;
+  padding: 10px;
+}
+
+.large-header-container > div:nth-of-type(2) {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.header-container > div:nth-of-type(2) > img {
+.small-header-container > div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.large-header-container > div:nth-of-type(2) > img {
   width: 15%;
 }
 
-.header-container > div:nth-of-type(2) > button {
+.large-header-container > div:nth-of-type(2) > button {
   background-color: transparent;
   border: 0;
   outline: none;
   cursor: pointer;
+}
+
+.small-header-container > div:nth-of-type(2) > button {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
 }

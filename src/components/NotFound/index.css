@@ -17,6 +17,7 @@
   background-color: var(--home-bg-color);
   margin-top: 10vh;
   margin-left: 280px;
+  padding: 20px;
   width: 100%;
   min-height: 90vh;
   height: 100%;
@@ -24,6 +25,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 567px) {
+  .not-found-container {
+    margin-left: 0;
+  }
 }
 
 .not-found-container > img {

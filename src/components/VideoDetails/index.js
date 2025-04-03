@@ -115,6 +115,7 @@ class VideoDetails extends Component {
       viewCount,
       channelName,
       publishedAt,
+      profileImageUrl,
     } = videoDetail
     const newVideo = {
       id,
@@ -123,6 +124,7 @@ class VideoDetails extends Component {
       viewCount,
       channel: {
         name: channelName,
+        profileImageUrl,
       },
       publishedAt,
     }
@@ -228,12 +230,12 @@ class VideoDetails extends Component {
           {value.theme === 'light' ? (
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png"
-              alt=""
+              alt="failure view"
             />
           ) : (
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png"
-              alt=""
+              alt="failure view"
             />
           )}
           <h1>Oops! Something Went Wrong</h1>
@@ -269,7 +271,10 @@ class VideoDetails extends Component {
       <>
         <Header />
 
-        <div className="video-details-page-container">
+        <div
+          data-testid="videoItemDetails"
+          className="video-details-page-container"
+        >
           <SideBar />
           <div className="video-details-page">
             {this.renderVideoDetailsPage()}

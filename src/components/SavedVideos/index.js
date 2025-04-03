@@ -106,7 +106,7 @@ class SavedVideos extends Component {
       <>
         <Header />
 
-        <div className="saved-page-container">
+        <div data-testid="savedVideos" className="saved-page-container">
           <SideBar />
           <div className="saved-page">{this.renderTrendingPage()}</div>
         </div>

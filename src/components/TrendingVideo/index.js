@@ -16,11 +16,17 @@ const TrendingVideo = props => {
       <div className="trending-video">
         <img src={thumbnailUrl} alt="video thumbnail" />
         <div className="trending-video-detail">
-          <p>{title}</p>
-          <p>{channel.name}</p>
-          <p>
-            {viewCount} views • {rest.join(' ')}
-          </p>
+          <img src={channel.profileImageUrl} alt="thumbnail" />
+          <div>
+            <p>{title}</p>
+            <p>{channel.name}</p>
+            <p>
+              {viewCount} views • {rest.join(' ')}
+            </p>
+            <p>
+              {channel.name} • {viewCount} views • {rest.join(' ')}
+            </p>
+          </div>
         </div>
       </div>
     </Link>

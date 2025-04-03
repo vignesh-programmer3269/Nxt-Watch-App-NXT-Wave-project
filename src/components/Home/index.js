@@ -110,10 +110,10 @@ class Home extends Component {
   }
 
   renderNoVideoPage = () => (
-    <div className="home-failure-container">
+    <div className="home-no-videos-container">
       <img
         src="https://assets.ccbp.in/frontend/react-js/nxt-watch-no-search-results-img.png"
-        alt=""
+        alt="no videos"
       />
       <h1>No Search results found</h1>
       <p>Try different key words or remove search filter</p>
@@ -130,12 +130,12 @@ class Home extends Component {
           {value.theme === 'light' ? (
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png"
-              alt=""
+              alt="failure view"
             />
           ) : (
             <img
               src="https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png"
-              alt=""
+              alt="failure view"
             />
           )}
           <h1>Oops! Something Went Wrong</h1>
@@ -179,7 +179,7 @@ class Home extends Component {
       <>
         <Header />
 
-        <div className="home-page-container">
+        <div data-testid="home" className="home-page-container">
           <SideBar />
           <div className="home-page">
             {bannerStatus && (
@@ -194,6 +194,7 @@ class Home extends Component {
                     type="button"
                     className="banner-close-btn"
                     onClick={this.closeBanner}
+                    data-testid="close"
                   >
                     <IoMdClose fontSize="18px" />
                   </button>

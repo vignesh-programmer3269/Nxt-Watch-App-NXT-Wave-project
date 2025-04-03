@@ -32,6 +32,12 @@
   height: 100%;
 }
 
+@media (max-width: 567px) {
+  .home-page {
+    margin-left: 0;
+  }
+}
+
 .home-banner-container {
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
   background-size: cover;
@@ -79,6 +85,12 @@
   margin: 30px;
 }
 
+@media (max-width: 567px) {
+  .search-field {
+    margin: 16px;
+  }
+}
+
 .search-field > input {
   outline: none;
   background-color: var(--search-bg-color);
@@ -88,6 +100,12 @@
   font-family: 'Roboto';
   color: var(--search-font-color);
   width: 450px;
+}
+
+@media (max-width: 567px) {
+  .search-field > input {
+    width: 100%;
+  }
 }
 
 .search-field > button {
@@ -105,4 +123,50 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media (max-width: 567px) {
+  .videos-container {
+    display: block;
+  }
+}
+
+.home-no-videos-container {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+  margin: 30px;
+  text-align: center;
+}
+
+.home-no-videos-container > img {
+  width: 350px;
+}
+
+.home-no-videos-container > h1 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: var(--failure-head-color);
+  margin-top: 20px;
+}
+
+.home-no-videos-container > p {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: var(--failure-para-color);
+  margin: 20px 0;
+}
+
+.home-no-videos-container > button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  background-color: #4f46e5;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  color: #f1f1f1;
+  padding: 12px 30px;
 }

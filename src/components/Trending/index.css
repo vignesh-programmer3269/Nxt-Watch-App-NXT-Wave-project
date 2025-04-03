@@ -25,6 +25,12 @@
   min-height: 90vh;
 }
 
+@media (max-width: 567px) {
+  .trending-page {
+    margin-left: 0;
+  }
+}
+
 .trending-page-header {
   background-color: var(--header-bg-color);
   display: flex;

@@ -7,13 +7,25 @@
 }
 
 .gaming-video {
-  width: 90%;
-  margin: 10px;
+  width: 250px;
+  margin: 20px 10px;
+}
+
+@media (max-width: 567px) {
+  .gaming-video {
+    width: 170px;
+  }
 }
 
 .gaming-video > img {
-  width: 300px;
+  width: 250px;
   margin-bottom: 15px;
+}
+
+@media (max-width: 567px) {
+  .gaming-video > img {
+    width: 170px;
+  }
 }
 
 .gaming-video-detail {
